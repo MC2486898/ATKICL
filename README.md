@@ -4,13 +4,10 @@
 
 **接管本机已运行的 ATK：查询状态、保持会话、监控进程、执行 Connect 脚本，并离线校验导出文件。**
 
-<<<<<<< HEAD
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20x64-0078D4?logo=windows&logoColor=white)
-=======
+
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python\&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-0078D4?logo=windows\&logoColor=white)
->>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
+
 ![Version](https://img.shields.io/badge/Version-0.1.0-2ea44f)
 ![Status](https://img.shields.io/badge/Status-beta-orange)
 ![Tests](https://img.shields.io/badge/Tests-94%20passed-brightgreen)
@@ -20,7 +17,7 @@
 
 </div>
 
-![主界面](docs/images/gui.png)
+
 
 ## 简介
 
@@ -49,11 +46,11 @@ ATK 的一次仿真往往要跑很久。中途想知道“软件还活着吗”�
 
 实例页负责 SDK 自检、状态刷新、接管/保持与进程监控。
 
-![实例页](docs/images/gui.png)
+
 
 脚本页用于编辑并执行 Connect 脚本，逐条查看返回结果与耗时。
 
-![脚本页](docs/images/script.png)
+
 
 > 脚本页和 `script run` 是仅有的会修改场景的入口。
 > `New` / `Load` / `Unload` / `Save` 可能覆盖文件，执行前请先备份。
@@ -62,7 +59,7 @@ ATK 的一次仿真往往要跑很久。中途想知道“软件还活着吗”�
 
 ### 环境要求
 
-<<<<<<< HEAD
+
 | 场景 | 要求 |
 |---|---|
 | 接管/监控真实实例 | Windows x64、CPython 3.12、ATK 4.2.0-rc.2 |
@@ -74,7 +71,7 @@ ATK 的一次仿真往往要跑很久。中途想知道“软件还活着吗”�
 | 接管/监控真实实例 | Windows x64、CPython 3.12、ATK 4.2.0-rc.2 |
 | 仅离线校验     | Python 3.11+                            |
 | Python 依赖 | `psutil>=6,<8`                          |
->>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
+
 
 实时接管必须使用 CPython 3.12，这是厂商 SDK 的限制；仅做离线校验时 3.11 也可运行。
 
@@ -157,7 +154,7 @@ python -m atkcli.gui
 | `atkcli reports cadence` | 核验相邻时间戳的实际步长         |
 | `atkcli xml compare`     | 比较两份 XML 的指定叶节点      |
 | `atkcli script run`      | 逐条执行 Connect 脚本      |
->>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
+
 
 完整参数见 `atkcli <命令> --help`。
 
@@ -249,7 +246,7 @@ except SessionError as exc:
 |  41 | 实例/端口/场景归属冲突      |
 |  42 | SDK、进程信息权限或握手失败   |
 | 130 | 用户中断              |
->>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
+
 
 ## 安全边界
 
