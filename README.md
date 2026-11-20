@@ -4,8 +4,13 @@
 
 **接管本机已运行的 ATK：查询状态、保持会话、监控进程、执行 Connect 脚本，并离线校验导出文件。**
 
+<<<<<<< HEAD
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-0078D4?logo=windows&logoColor=white)
+=======
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python\&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20x64-0078D4?logo=windows\&logoColor=white)
+>>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
 ![Version](https://img.shields.io/badge/Version-0.1.0-2ea44f)
 ![Status](https://img.shields.io/badge/Status-beta-orange)
 ![Tests](https://img.shields.io/badge/Tests-94%20passed-brightgreen)
@@ -57,11 +62,19 @@ ATK 的一次仿真往往要跑很久。中途想知道“软件还活着吗”�
 
 ### 环境要求
 
+<<<<<<< HEAD
 | 场景 | 要求 |
 |---|---|
 | 接管/监控真实实例 | Windows x64、CPython 3.12、ATK 4.2.0-rc.2 |
 | 仅离线校验 | Python 3.11+ |
 | Python 依赖 | `psutil>=6,<8` |
+=======
+| 场景        | 要求                                      |
+| --------- | --------------------------------------- |
+| 接管/监控真实实例 | Windows x64、CPython 3.12、ATK 4.2.0-rc.2 |
+| 仅离线校验     | Python 3.11+                            |
+| Python 依赖 | `psutil>=6,<8`                          |
+>>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
 
 实时接管必须使用 CPython 3.12，这是厂商 SDK 的限制；仅做离线校验时 3.11 也可运行。
 
@@ -102,6 +115,7 @@ python -m atkcli.gui
 
 ### 图形界面
 
+<<<<<<< HEAD
 | 页签 | 用途 |
 |---|---|
 | 实例 | SDK 自检、状态刷新、接管/保持、进程监控、启动空 GUI |
@@ -122,6 +136,28 @@ python -m atkcli.gui
 | `atkcli reports cadence` | 核验相邻时间戳的实际步长 |
 | `atkcli xml compare` | 比较两份 XML 的指定叶节点 |
 | `atkcli script run` | 逐条执行 Connect 脚本 |
+=======
+| 页签     | 用途                             |
+| ------ | ------------------------------ |
+| 实例     | SDK 自检、状态刷新、接管/保持、进程监控、启动空 GUI |
+| 报表与采样  | 解析地面站报表、核验采样间隔                 |
+| XML 比较 | 按路径比较两份 XML 的叶节点数值             |
+| 脚本     | 编辑并执行 Connect 脚本，查看逐条结果        |
+| 说明     | 版本、边界与退出码                      |
+
+### 命令行
+
+| 命令                       | 说明                   |
+| ------------------------ | -------------------- |
+| `atkcli doctor`          | 导入 SDK 自检            |
+| `atkcli instance status` | 被动快照：进程、端口监听与锁       |
+| `atkcli instance attach` | 核验身份后接管，可保持指定时长      |
+| `atkcli instance watch`  | 仅用操作系统探活，不建立 Connect |
+| `atkcli reports parse`   | 解析已导出的地面站报表          |
+| `atkcli reports cadence` | 核验相邻时间戳的实际步长         |
+| `atkcli xml compare`     | 比较两份 XML 的指定叶节点      |
+| `atkcli script run`      | 逐条执行 Connect 脚本      |
+>>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
 
 完整参数见 `atkcli <命令> --help`。
 
@@ -187,6 +223,7 @@ except SessionError as exc:
 
 ## 退出码
 
+<<<<<<< HEAD
 | 码 | 含义 |
 |---:|---|
 | 0 | 成功或完成 dry-run |
@@ -199,6 +236,20 @@ except SessionError as exc:
 | 41 | 实例/端口/场景归属冲突 |
 | 42 | SDK、进程信息权限或握手失败 |
 | 130 | 用户中断 |
+=======
+|   码 | 含义                |
+| --: | ----------------- |
+|   0 | 成功或完成 dry-run     |
+|   2 | 参数、输入格式、路径或文件读写错误 |
+|  10 | 期限内未就绪或未获有效应答     |
+|  20 | 原实例消失或 PID 已复用    |
+|  21 | 未找到请求接管的实例        |
+|  31 | 数据不足或核验未通过        |
+|  40 | 其他客户端持锁，等待超时      |
+|  41 | 实例/端口/场景归属冲突      |
+|  42 | SDK、进程信息权限或握手失败   |
+| 130 | 用户中断              |
+>>>>>>> 2e0d3c6d81e80c6e0b5d95c58449808cb8dc96da
 
 ## 安全边界
 
