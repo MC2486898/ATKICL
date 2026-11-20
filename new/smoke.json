@@ -1,0 +1,141 @@
+{
+  "generated_utc": "2026-11-20T11:55:28.603842+00:00",
+  "python": "3.12.15",
+  "os": "Windows",
+  "psutil": "7.2.2",
+  "wheel_sha256": "2e64ddbbe6ea5a241d6c626125025d7e8da68f64d4d6bcab4b28f9612895abe4",
+  "gui_launched_by_acceptance": false,
+  "live_gui_handshake_tested": false,
+  "results": {
+    "version": {
+      "exit_code": 0,
+      "result": "atkcli 0.1.0"
+    },
+    "doctor": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "state": "SDK_OK",
+        "home": "D:\\ATK-4.2.0-rc.2",
+        "connected": false
+      }
+    },
+    "passive_status": {
+      "exit_code": 0,
+      "result": {
+        "state": "ABSENT",
+        "endpoint": "127.0.0.1:6655",
+        "responsive": null
+      }
+    },
+    "dry_run": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "state": "DRY_RUN",
+        "action": "取得锁，核对实例身份，建立只读 Connect 连接；退出时释放锁和连接",
+        "start_if_missing": true,
+        "out": null
+      }
+    },
+    "parse_zh": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "status": "OK",
+        "windows": [
+          {
+            "start_utc": "2024-02-29T18:00:00.000Z",
+            "end_utc": "2024-02-29T18:00:05.000Z",
+            "dur_s": 5.0
+          },
+          {
+            "start_utc": "2024-02-29T18:00:10.000Z",
+            "end_utc": "2024-02-29T18:00:13.000Z",
+            "dur_s": 3.0
+          }
+        ],
+        "statistics": {
+          "min_duration_s": 3.0,
+          "max_duration_s": 5.0,
+          "mean_duration_s": 4.0,
+          "mean_unavailable_s": 5.0,
+          "total_duration_s": 8.0
+        }
+      }
+    },
+    "parse_en": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "status": "OK",
+        "windows": [
+          {
+            "start_utc": "2024-02-29T18:00:00.000Z",
+            "end_utc": "2024-02-29T18:00:05.000Z",
+            "dur_s": 5.0
+          },
+          {
+            "start_utc": "2024-02-29T18:00:10.000Z",
+            "end_utc": "2024-02-29T18:00:13.000Z",
+            "dur_s": 3.0
+          }
+        ],
+        "statistics": {
+          "min_duration_s": 3.0,
+          "max_duration_s": 5.0,
+          "mean_duration_s": 4.0,
+          "mean_unavailable_s": 5.0,
+          "total_duration_s": 8.0
+        }
+      }
+    },
+    "cadence_ok": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "n": 3,
+        "min_step_s": 60.0,
+        "max_step_s": 60.0,
+        "expected_s": 60.0,
+        "reference_step_s": 60.0,
+        "bad_intervals": 0
+      }
+    },
+    "cadence_mismatch": {
+      "exit_code": 31,
+      "result": {
+        "ok": false,
+        "n": 3,
+        "min_step_s": 60.0,
+        "max_step_s": 60.0,
+        "expected_s": 1.0,
+        "reference_step_s": 1.0,
+        "bad_intervals": 2
+      }
+    },
+    "xml_compare": {
+      "exit_code": 0,
+      "result": {
+        "ok": true,
+        "checks": [
+          {
+            "path": "Display/Scale",
+            "ok": true,
+            "before": "1.50",
+            "after": "1.500000"
+          }
+        ]
+      }
+    },
+    "attach_if_absent": {
+      "exit_code": 21,
+      "result": {
+        "ok": false,
+        "state": "ABSENT",
+        "message": "未发现 ATK 实例；attach 不会自行启动。",
+        "exit_code": 21
+      }
+    }
+  }
+}
