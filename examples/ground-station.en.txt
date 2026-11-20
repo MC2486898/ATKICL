@@ -1,0 +1,13 @@
+Ground Station Downlink Report (synthetic)
+      No.           Start time(UTCG)          End time(UTCG)      Duration(s)
+ ----------   -----------------------  -----------------------   -----------
+          1   2024-02-29 18:00:00.000  2024-02-29 18:00:05.000         5.000
+          2   2024-02-29 18:00:10.000  2024-02-29 18:00:13.000         3.000
+
+Global Statistics
+-----------------
+Access Min Duration(s)     2   2024-02-29 18:00:10.000   2024-02-29 18:00:13.000   3.000
+Access Max Duration(s)     1   2024-02-29 18:00:00.000   2024-02-29 18:00:05.000   5.000
+Access Mean Duration(s)    4.000
+Unaccess Mean Duration(s)  5.000
+Access Total Duration(s)   8.000

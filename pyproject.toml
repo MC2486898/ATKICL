@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=70.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atkcli"
+version = "0.1.0"
+description = "ATK 本机会话接管、进程监控与导出文件校验"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["psutil>=6,<8"]
+authors = [{name = "ClawsGO Agent"}]
+
+[project.scripts]
+atkcli = "atkcli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
