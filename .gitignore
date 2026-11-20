@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+
+# 构建产物
+*.whl
+*.zip
+
+# 运行产物
+session*.json
+*.jsonl
+*.log
+
+# 系统
+Thumbs.db
+.DS_Store
